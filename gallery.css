@@ -1,35 +1,32 @@
-*{margin: 0px; padding: 0px;}
-body{font-family: 'Verdana'; color:black;}
-header{width: 100%; position: fixed; background: white; z-index: 1; border-bottom-style: solid; border-bottom-width: 2px;}
-header>nav {width: 1180px; height: 120px; overflow: hidden; display: block; margin: auto;}
-header>nav>.utility{font-size: 12px; float: right; position: relative; right: 30px; top: 20px; margin-right: -30px;}
-header>nav>h1 {position: relative; left: 10px; bottom: 15px; top: 80px;}
-header>nav>h1>a {color: black;}
-header>nav>.global{float: right; position: relative; right: 0px; bottom: 0px; top: 60px;}
-header>nav>ul>li{list-style: none; float: left; padding-left: 20px;}
-header>nav>.global>li{font-size: 18px; font-weight: bold; padding-left: 60px;}
-header>nav>.global>li>a {color: black;}
-a{text-decoration: none; color: darkgrey;}
-section {width: 1000px; display: block; margin: auto; padding-top: 120px;}
-article {float: left; font-weight: bold; margin-top: 10px;}
-#article_one {width: 700px; height: 400px; margin-right: 10px;
-  font-size: 30px; color: white; background-image: url(700x400.png);}
-.one {text-align: right; position: relative; right: 10px; bottom: 10px; top: 360px;}
-#article_two {width: 290px; height: 190px;
-  font-size: 20px; color: white; background-image: url(290x190.png);}
-.two {position: relative; left: 10px; top: 50px;}
-#article_three_one {width: 290px; height: 95px;
-  font-size: 20px; color: white; background-image: url(290x95-1.png);}
-.three_one {text-align: right; position: relative; right: 10px; bottom: 20px; top: 55px;}
-#article_four_one {width: 490px; height: 240px;
-  font-weight: normal; background-image: url(490x240-1.png);}
-.four_one {width: 300px; display: block; margin: auto; position: relative; top: 160px;}
-#article_four_two {width: 490px; height: 240px; margin-top: 10px;
-  font-size: 30px; color: gold; background-image: url(490x240-2.png);}
-.four_two {text-align: right; position: relative; right: 20px; bottom: 20px; top: 180px;}
-#article_six {width: 1000px; height: 371px;
-  font-size: 50px; color: white; background-image: url(1000x371.png);}
-.six {text-align: center; position: relative; top: 155px;}
-#article_seven {width: 1000px; height: 361px;
-  font-size: 30px; color: white; background-image: url(1000x361.png);}
-.seven {width: 450px; height: 150px; line-height: 60px; position: relative; right: 30px; bottom: 40px; left: 520px; top: 171px;}
+*{margin: 0px; padding: 0px; font-family: "verdana"; box-sizing: border-box;}
+ul {list-style-type: none;}
+a{text-decoration: none;}
+header{width: 100%; border-bottom: 1px solid black; position: fixed; top: 0px; background: white;}
+header .inner {width: 1180px; height: 120px; margin: 0px auto; position: relative;}
+header .inner h1 {position: absolute; left: 10px; bottom: 15px;}
+header .inner h1 a {font: bold 24px/1 "verdana"; color: #444;}
+header .inner #gnb {position: absolute; bottom: 0px; right: 0px;}
+header .inner #gnb li{float: left;}
+header .inner #gnb li a { display: block; font: bold 15px/1 "verdana"; color: #555; padding: 20px 40px; transition: all 0.5s;}
+header .inner #gnb li a:hover {background: #555; color: #fff;}
+header .inner .util {position: absolute; top: 20px; right: 30px;}
+header .inner .util li {float: left;}
+header .inner .util li a {display: block; font: 12px/1 "verdana"; color: #999; padding: 0px 10px;}
+section {width: 1000px; margin: 0px auto; overflow: hidden; padding-top: 120px;}
+article {float: left; position: relative; z-index: -1;}
+article.item1 {width: 700px; height: 400px; margin: 10px 10px 0px 0px; background-image: url(700x400.png);}
+article.item1 p {position: absolute; right: 10px; bottom: 10px; font-size: 30px; font-weight: bold; color: white;}
+article.item2 {width: 290px; height: 190px; margin: 10px 0px 0px; background-image: url(290x190.png);}
+article.item2 p {position: absolute; top: 50px; left: 10px; font-size: 20px; font-weight: bold; color: white;}
+article.item3 {width: 290px; height: 95px; margin: 10px 0px 0px;}
+article.item3 p {position: absolute; bottom: 20px; right: 10px; font-size: 20px; font-weight: bold; color: white;}
+section div {float: left; width: 490px; height: 490px; margin-top: 10px;}
+article.item4 {width: 490px; height: 240px;}
+article.item4 .p1 {width: 300px; margin: 160px auto 10px;}
+article.item4 .p2 {position: absolute; right: 20px; bottom: 30px; font-size: 30px; font-weight: bold; color: gold;}
+article.item5 {width: 500px; height: 490px; margin: 10px 0px 0px 10px; background-image: url(500x490.png);}
+article.item6 {width: 1000px; height: 371px; margin-top: 10px; background-image: url(1000x371.png);}
+article.item6 p {line-height: 371px; text-align: center; color: white; font-size: 50px; font-weight: bold; text-shadow: 1px 1px 0px black;}
+article.item7 {width: 1000px; height: 361px; margin-top: 10px; margin-bottom: 50px; background-image: url(1000x361.png);}
+article.item7 div {width: 450px; height: 150px; position: absolute; right: 30px; bottom: 40px; font-size: 20px; color: white; line-height: 50px;}
+article.item7 div span {font-weight: bold; font-size: 30px;}
